@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Speech Recognition</title>
+    <link rel="stylesheet" href="speech.css">
+    <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- load font awesome here for icon used on the page -->
+</head>
+
+<body>
+    <div class="container">
+        <!--page container -->
+        <!-- <div class="text-box" contenteditable="true"></div> -->
+
+        <div class="loading" id="loading">
+            <div class="loader" id="loader-2">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+
+        <input type="text" id="input_box" class="text-box" id="" placeholder="type anything">
+
+        <!--text box which will contain spoken text -->
+        <div class="icons">
+            <i class="fa fa-microphone"></i>
+            <i class="fa fa-assistive-listening-systems"></i>
+        </div>
+        <!-- microphone icon to be clicked before speaking -->
+    </div>
+    <audio class="sound" src="chime.mp3"></audio>
+    <!-- sound to be played when we click icon => http://soundbible.com/1598-Electronic-Chime.html -->
+    <script src="speech.js"></script>
+    <!-- link to index.js script -->
+</body>
+
+</html>

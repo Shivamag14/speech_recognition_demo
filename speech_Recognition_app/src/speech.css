@@ -1,0 +1,130 @@
+body {
+    background: #1e2440;
+    color: #f2efe2;
+    font-size: 16px;
+    font-family: "Kaushan Script", cursive;
+    font-family: "Shadows Into Light", cursive;
+}
+
+.container {
+    position: relative;
+    border: 1px solid #f2efe2;
+    width: 40vw;
+    max-width: 60vw;
+    margin: 0 auto;
+    border-radius: 0.1rem;
+    background: #f2efe2;
+    padding: 0.2rem 1rem;
+    color: #1e2440;
+    margin-top: 10vh;
+}
+
+.text-box {
+    /* max-height: 70vh;
+    overflow: auto; */
+    width: 82%;
+    height: 2.5em;
+    padding: 0px 20px;
+    border-radius: 11px;
+    font-family: cursive;
+    font-size: 1em;
+    background: #f2efe2;
+    border: none;
+    border-bottom: 2px dotted;
+}
+
+.text-box:focus {
+    outline: none;
+}
+
+.text-box p {
+    border-bottom: 1px dotted black;
+    margin: 0px !important;
+    padding: 1em;
+}
+
+.fa {
+    color: white;
+    background: #1e2440;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-top: 0.3rem;
+    float: right;
+    width: 2rem;
+    height: 2rem;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+}
+
+.icons {
+    position: absolute;
+    margin-top: -2.5em;
+    margin-left: 85%;
+}
+
+.loading {
+    display: none;
+}
+
+
+/* ALL LOADERS */
+
+.loader {
+    border-radius: 100%;
+    position: absolute;
+    top: -1em;
+    left: 3em;
+    margin: 0 auto;
+}
+
+
+/* LOADER 2 */
+
+#loader-2 span {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    background-color: #3498db;
+    margin: 35px 5px;
+}
+
+#loader-2 span:nth-child(1) {
+    animation: bounce 1s ease-in-out infinite;
+}
+
+#loader-2 span:nth-child(2) {
+    animation: bounce 1s ease-in-out 0.33s infinite;
+}
+
+#loader-2 span:nth-child(3) {
+    animation: bounce 1s ease-in-out 0.66s infinite;
+}
+
+@keyframes bounce {
+    0%,
+    75%,
+    100% {
+        -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+        -o-transform: translateY(0);
+        transform: translateY(0);
+    }
+    25% {
+        -webkit-transform: translateY(-20px);
+        -ms-transform: translateY(-20px);
+        -o-transform: translateY(-20px);
+        transform: translateY(-20px);
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 85vw;
+        max-width: 85vw;
+    }
+    .text-box {
+        max-height: 55vh;
+    }
+}
